@@ -1,0 +1,9 @@
+* file explanation
+1. item.js for fetch data or json
+2. ProductCard.jsx for card template
+3. Card.jsx for showing the data using map
+
+* code flow
+1. fetch get all data using axios at file item.js then export it
+2. using useeffect to pay attention to changes in data at file Card.jsx
+3. show the data using map at file Card.jsx
