@@ -1,4 +1,4 @@
-// src/components/Card.jsx
+// Card.jsx
 import ProductCard from "./ProductCard";
 
 const Card = ({ item }) => {

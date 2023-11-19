@@ -1,4 +1,4 @@
-// src/components/ProductCard.jsx
+// ProductCard.jsx
 const ProductCard = ({ productName, productImage, productPrice, onAddToCart }) => {
   const handleAddToCart = () => {
     // Lakukan logika tambahkan ke keranjang di sini
