@@ -8,6 +8,7 @@ const Card = ({ item }) => {
 
   return (
     <ProductCard
+      key={item.id}
       productName={item.namaBarang}
       productImage={item.img}
       productPrice={item.hargaBarang}
