@@ -1,0 +1,6 @@
+* requirements
+1. you need to install prisma, cors, express, dotenv first "npm install express cors prisma dotenv"
+2. you must have .env file and inside there is PORT and DATABASE_URL
+3. setup the prisma so you can have prisma folder AUTOMATICALLY "npx prisma init --datasource-provider sqlite"
+4. install cuid or uuid for random id. "npm install uuid"
+5. if you done with creating model you can type in terminal "npx prisma generate" then "npx db push" or use "npx migrate dev"
