@@ -1,0 +1,9 @@
+* simple explanation
+Seeding allows you to consistently re-create the same data in your database
+
+* step by step
+1. create seed file, look at the seed.js file
+2. paste this at package.json or just run it: 
+   "prisma": {
+    "seed": "node prisma/seed.js"
+   },
