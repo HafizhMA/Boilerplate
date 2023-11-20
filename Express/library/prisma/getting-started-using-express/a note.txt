@@ -1,0 +1,3 @@
+* step by step
+1. install express, cors, prisma using "npm install express cors prisma"
+2. create PORT and DATABASE_URL at .env file, dont forget to install dotenv first "npm install dotenv"
