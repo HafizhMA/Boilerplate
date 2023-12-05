@@ -1,0 +1,20 @@
+// Generator untuk menghasilkan Prisma client
+// dan konfigurasi sumber data menggunakan PostgreSQL
+// serta definisi model 'Product'
+generator client {
+    provider = "prisma-client-js"
+}
+
+datasource db {
+    provider = "postgresql"
+    url      = env("DATABASE_URL") // Menggunakan URL database dari variabel lingkungan
+}
+
+model Product {
+    id              String @id @default(uuid()) // Properti ID dengan tipe data string dan default UUID
+    namaBarang      String // Properti nama barang dengan tipe data string
+    deskripsiBarang String // Properti deskripsi barang dengan tipe data string
+    img             String // Properti gambar dengan tipe data string
+    hargaBarang     Int // Properti harga barang dengan tipe data integer
+    quantity        Int // Properti jumlah barang dengan tipe data integer
+}

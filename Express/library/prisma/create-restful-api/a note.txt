@@ -1,0 +1,31 @@
+### Catatan Fungsi Kode
+
+#### Prisma Schema (`schema.prisma`)
+- **Deskripsi**: Definisi skema database menggunakan Prisma, mendefinisikan struktur data untuk entitas `Product`.
+- **Kebutuhan**: Tidak berlaku untuk fungsi langsung, tetapi mendefinisikan struktur database untuk entitas produk.
+
+#### Kontroler Produk (`productController.js`)
+- **Fungsi**:
+  - `getProducts`: Mendapatkan semua produk dari database.
+  - `getOneProduct`: Mendapatkan satu produk berdasarkan ID.
+  - `createProduct`: Membuat produk baru dalam database.
+  - `updateProduct`: Memperbarui produk yang ada berdasarkan ID.
+  - `deleteProduct`: Menghapus produk berdasarkan ID.
+- **Kebutuhan**: 
+  - `getOneProduct, updateProduct, deleteProduct`: Memerlukan ID produk dalam `req.params`.
+  - `createProduct, updateProduct`: Memerlukan data produk dalam `req.body` (namaBarang, deskripsiBarang, hargaBarang, quantity).
+- **Respons**:
+  - Respon JSON yang mengandung status operasi, data (jika berhasil), dan pesan sesuai hasil operasi.
+  - Menangani kesalahan dengan mengirimkan pesan kesalahan yang sesuai jika terjadi error.
+
+#### Routes Produk (`productRoutes.js`)
+- **Deskripsi**: Mendefinisikan endpoint-endpoint HTTP untuk operasi-operasi CRUD pada produk yang diarahkan ke fungsi-fungsi dalam `productController.js`.
+- **Kebutuhan**: Tidak memerlukan input langsung, tetapi mengarahkan permintaan HTTP ke fungsi-fungsi yang sesuai dalam kontroler.
+
+#### Main App (`index.js`)
+- **Deskripsi**: Konfigurasi aplikasi utama menggunakan Express.js, mengatur endpoint dan menggunakan rute-rute produk.
+- **Kebutuhan**: Menggunakan rute-rute produk untuk mengarahkan permintaan HTTP terkait produk.
+
+### Kebutuhan Umum
+- **getOneProduct, updateProduct, deleteProduct**: Memerlukan ID produk yang valid dalam `req.params`.
+- **createProduct, updateProduct**: Memerlukan data produk dalam `req.body` (namaBarang, deskripsiBarang, hargaBarang, quantity).
