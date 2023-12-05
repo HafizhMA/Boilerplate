@@ -1,0 +1,23 @@
+1. **Persiapan Awal:**
+   - Pastikan Anda telah menginstal Axios dengan menjalankan perintah `npm install axios`.
+
+2. **Pengaturan Endpoint API:**
+   - Tentukan endpoint API yang akan digunakan dan pastikan URL API yang dituju sudah sesuai dengan `API_URL` yang telah ditentukan.
+
+3. **File 'item.js':**
+   - File ini berisi fungsi `allProducts()` yang menggunakan Axios untuk melakukan GET request ke endpoint yang ditentukan.
+   - Fungsi ini mengembalikan data produk yang diperoleh dari API jika request berhasil, dan melemparkan error jika terjadi masalah.
+
+4. **File 'Card.jsx':**
+   - Mengimpor React, useState, useEffect dari 'react' dan komponen `ProductCard` dari './ProductCard'.
+   - Membuat komponen `Card` yang menggunakan useState untuk menyimpan produk yang diambil dari API.
+   - Terdapat fungsi `fetchData` yang menggunakan `allProducts()` dari 'item.js' untuk mengambil produk dan mengatur state `products` dengan data yang diambil.
+   - Menggunakan `useEffect` untuk menjalankan `fetchData()` sekali saat komponen pertama kali dimuat.
+   - Menampilkan daftar produk dalam bentuk kartu menggunakan `ProductCard`, jika ada produk. Jika tidak, menampilkan pesan "Barang tidak ada".
+
+5. **Penggunaan pada Aplikasi Anda:**
+   - Pastikan untuk memasukkan file 'Card.jsx' ini sebagai bagian dari aplikasi React Anda.
+   - Sesuaikan tampilan dan style komponen sesuai kebutuhan desain aplikasi Anda.
+   - Pastikan endpoint API yang digunakan sesuai dengan kebutuhan aplikasi.
+
+Dengan mengikuti langkah-langkah ini, Anda dapat menggunakan template code tersebut untuk mengambil data dari API dan menampilkan daftar produk dalam komponen React. Pastikan untuk menyesuaikan dengan kebutuhan spesifik aplikasi Anda.
