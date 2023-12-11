@@ -5,5 +5,5 @@
 1. Install react hook form "npm install react-hook-form"
 2. Import useForm
 3. Then call register, handleSubmit, formState in order to run react hook form 4.
-5. Use the spread operator with the register name so that it can perform validation
-4. To display the validation message just create an open bracket and a curly closing bracket that starts with errors.exampleRequired
+4. Use the spread operator with the register name so that it can perform validation
+5. To display the validation message just create an open bracket and a curly closing bracket that starts with errors.exampleRequired
